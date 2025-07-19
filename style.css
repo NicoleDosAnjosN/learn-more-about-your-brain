@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&display=swap');
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    
+    /*botao "clique" */
+background-image: linear-gradient(rgb(34, 195, 45), rgb(170, 251, 150));
+background-attachment: fixed;
+
+}
+
+#estilo{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  top: 5%;
+}
+   
+
+.texto{
+    font-size: 50px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #ececee, #8ce383, #00ff08, #ffffff) ;
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+h3 {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 10;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;}
+
+
+@keyframes degrade{
+  0%{
+    background-position-x: 0% 50%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+#botao {
+  background-color:#ffffff;
+  color:#000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+}
+
+#botao:hover {
+
+  transform: scale(1.1);
+#botao:active {
+  transform: scale(0.93);
+}
+
+}
+/* Cerébro local */
+#brainContainer canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  Z-index: 1;
+  pointer-events: none;
+
+}
+.container{
+  position: relative;
+  z-index: 2;
+  
+
+}
+#bgvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
