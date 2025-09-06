@@ -9,10 +9,7 @@ brain through an interactive 3D visualization on the web.*
 
 ##  Technologies Used:
 - HTML, CSS, and JavaScript
-- [Three.js](https://threejs.org/)
-- GLTFLoader
-- Vite
-- Node.js
+
 
 ##  How to Run Locally:
 ```bash
